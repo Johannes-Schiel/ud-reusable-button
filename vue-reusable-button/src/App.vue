@@ -29,6 +29,12 @@ export default {
 </script>
 
 <style lang="scss">
+@font-face {
+	font-family: $roboto;
+	src: url('@/assets/fonts/Roboto-Bold.ttf');
+	font-weight: 700;
+}
+
 body,
 html {
 	background-color: $second;

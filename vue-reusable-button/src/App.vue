@@ -1,10 +1,28 @@
-<template> </template>
+<template>
+	<div class="buttons">
+		<CustomButton
+			@click="doSomething($event)"
+			theme="prime"
+			label="Custom Button" />
+		<CustomButton
+			@click="doSomething($event)"
+			theme="secondary"
+			label="Custom Button" />
+		<CustomButton
+			@click="doSomething($event)"
+			theme="secondary"
+			disabled
+			label="Custom Button" />
+	</div>
+</template>
 
 <script>
+import CustomButton from './components/CustomButton.vue';
 export default {
+	components: { CustomButton },
 	methods: {
-		doSomething: ($event, text) => {
-			console.log(text, $event.target);
+		doSomething: ($event) => {
+			console.log($event);
 		},
 	},
 };
@@ -23,6 +41,12 @@ html {
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
+	.buttons {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
 }
 
 * {

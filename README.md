@@ -1,2 +1,10 @@
-# ud-reusable-button
-In diesem Repository ist der Code zu dem Tutorial für Reusable Buttons mit Vue &amp; Angular.
+# Reusable Components
+
+In diesem Repository werden alle wichtigen Informationen hinterlegt die, im Rahmen des YouTube Tutorials
+
+1. Video - 
+2. Video -
+3. Video -
+
+Playlist:
+

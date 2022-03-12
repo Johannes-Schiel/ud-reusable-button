@@ -1,12 +1,34 @@
+<template>
+	<CustomButton
+		@click="doSomething($event, 'prime')"
+		theme="prime"
+		label="Custom Button" />
+	<CustomButton
+		@click="doSomething($event, 'secondary')"
+		theme="secondary"
+		label="Custom Button" />
+	<CustomButton
+		@click="doSomething($event, 'disabled')"
+		:disabled="true"
+		theme="secondary"
+		label="Custom Button" />
+</template>
+
 <script lang="ts">
 import { defineComponent } from 'vue';
+import CustomButton from '@/components/CustomButton.vue';
 
-export default defineComponent({});
+export default defineComponent({
+	components: {
+		CustomButton,
+	},
+	methods: {
+		doSomething: ($event: MouseEvent, text: string) => {
+			console.log(text, $event.target);
+		},
+	},
+});
 </script>
-
-<template>
-	<CustomButton />
-</template>
 
 <style lang="scss">
 body,
@@ -20,6 +42,7 @@ html {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex-direction: column;
 }
 
 * {

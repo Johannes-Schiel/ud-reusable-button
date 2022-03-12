@@ -1,18 +1,4 @@
-<template>
-	<CustomButton
-		@click="doSomething($event, 'prime')"
-		theme="prime"
-		label="Custom Button" />
-	<CustomButton
-		@click="doSomething($event, 'secondary')"
-		theme="secondary"
-		label="Custom Button" />
-	<CustomButton
-		@click="doSomething($event, 'disabled')"
-		:disabled="true"
-		theme="secondary"
-		label="Custom Button" />
-</template>
+<template> </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue';

@@ -1,28 +1,28 @@
-<script>
+<script lang="ts">
+import { defineComponent } from 'vue';
 
+export default defineComponent({});
 </script>
 
-<template></template>
+<template>
+	<CustomButton />
+</template>
 
 <style lang="scss">
-
 body,
 html {
+	background-color: $second;
+	font-size: 10px;
 	width: 100%;
 	height: 100%;
+	margin: 0;
+	padding: 0;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-color: $second;
-	font-size: 10px;
-	margin: 0;
-	padding: 0;
-	color: $ciBlue;
-	font-family: $roboto;
 }
 
 * {
 	box-sizing: border-box;
 }
-
 </style>

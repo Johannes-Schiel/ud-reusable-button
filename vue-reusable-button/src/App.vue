@@ -1,19 +1,13 @@
 <template> </template>
 
-<script lang="ts">
-import { defineComponent } from 'vue';
-import CustomButton from '@/components/CustomButton.vue';
-
-export default defineComponent({
-	components: {
-		CustomButton,
-	},
+<script>
+export default {
 	methods: {
-		doSomething: ($event: MouseEvent, text: string) => {
+		doSomething: ($event, text) => {
 			console.log(text, $event.target);
 		},
 	},
-});
+};
 </script>
 
 <style lang="scss">

@@ -1,9 +1,21 @@
-<app-custom-button (customClick)="doSomething($event)" [theme]="CustomButtonTheme.prime" [label]="'Custom Button'">
+<app-custom-button
+  (customClick)="doSomething($event)"
+  [theme]="CustomButtonTheme.prime"
+  [label]="'Custom Button'"
+>
 </app-custom-button>
 
-<app-custom-button (customClick)="doSomething($event)" [theme]="CustomButtonTheme.secondary" [label]="'Custom Button'">
+<app-custom-button
+  (customClick)="doSomething($event)"
+  [theme]="CustomButtonTheme.secondary"
+  [label]="'Custom Button'"
+>
 </app-custom-button>
 
-<app-custom-button (customClick)="doSomething($event)" [theme]="CustomButtonTheme.secondary" [disabled]="true"
-    [label]="'Custom Button'">
+<app-custom-button
+  (customClick)="doSomething($event)"
+  [theme]="CustomButtonTheme.secondary"
+  [disabled]="true"
+  [label]="'Custom Button'"
+>
 </app-custom-button>

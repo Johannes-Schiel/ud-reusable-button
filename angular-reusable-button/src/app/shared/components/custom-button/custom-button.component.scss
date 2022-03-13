@@ -1,0 +1,39 @@
+@import "src/styles";
+
+.custom-button {
+  border: none;
+  margin: 1rem;
+  padding: 1.5rem 2rem;
+  border-radius: 1rem;
+  font-size: 1.7rem;
+  font-weight: 700;
+  font-family: $roboto;
+  transition: all 250ms ease-in-out;
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    transform: translate(0, -1rem);
+  }
+
+  &.prime {
+    background-color: $ciGreen;
+    color: $second;
+  }
+
+  &.secondary {
+    background-color: transparent;
+    border: 0.2rem solid $ciGreen;
+    color: $ciGreen;
+  }
+
+  &:disabled {
+    background-color: transparent;
+    border: 0.2rem solid $ciGrey;
+    color: $ciGrey;
+    &:hover,
+    &:focus {
+      cursor: auto;
+      transform: translate(0, 0);
+    }
+  }
+}

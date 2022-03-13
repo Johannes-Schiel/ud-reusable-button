@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { CustomButtonTheme } from 'src/app/core/enum';
 
 @Component({
@@ -11,5 +11,11 @@ export class CustomButtonComponent {
     @Input() label: string = '';
     @Input() disabled: boolean = false;
     @Input() theme: CustomButtonTheme = CustomButtonTheme.prime;
+
+    @Output() buttonClick: EventEmitter<MouseEvent> = new EventEmitter<MouseEvent>();
+
+    public clicked($event: MouseEvent): void {
+        this.buttonClick.emit($event);
+    }
 
 }
